@@ -131,11 +131,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 STATIC_URL = '/static/'
 
 
-<<<<<<< HEAD
-STATICFILES_DIRS = [
-     os.path.join(BASE_DIR, "static"),
- ]
-=======
 # Where to redirect during authentication
 # LOGIN_REDIRECT_URL = reverse_lazy('home-page')
 # LOGOUT_REDIRECT_URL = "/"
@@ -147,4 +142,3 @@ try:
     from buycode.local_settings import *
 except ImportError:
     pass
->>>>>>> dffda5b88ce856b01557cd1832dcc5dd423a482d
