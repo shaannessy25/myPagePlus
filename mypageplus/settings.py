@@ -52,7 +52,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'myPagePlus.urls'
+ROOT_URLCONF = 'mypageplus.urls'
 
 TEMPLATES = [
     {
@@ -75,7 +75,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'myPagePlus.wsgi.application'
+WSGI_APPLICATION = 'mypageplus.wsgi.application'
 
 
 # Database
@@ -128,7 +128,7 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-STATIC_URL = './static/'
+STATIC_URL = '/static/'
 
 
 # Where to redirect during authentication
