@@ -1,6 +1,17 @@
 body {
-  background-color: red;
-  padding: 0%;
+  background: #222 !important;
+}
+
+.navbar {
+  background: #222 !important;
+}
+
+.jumbotron {
+  background-color: transparent !important;
+}
+
+.padding-top {
+  padding-top: 5rem;
 }
 
 .gsc-control-cse {

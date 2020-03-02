@@ -1,41 +1,48 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
-    <link rel="myPage icon icon" href="{% static 'images/mypage+.jpg' %}">
-    <title> myPages &#8314;</title>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+  <title>myPages &#8314;</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
+
+  <!-- Roboto Font -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome -->
+  <script
+    src="https://kit.fontawesome.com/b9b3b3ea30.js"
+    crossorigin="anonymous">
+  </script>
+
+  <!-- Custom Style -->
+  <link
+    rel="stylesheet"
+    type="text/css"
+    href="{% static 'style.css' %}"
+  />
+
+  <!-- Custom Logo -->
+  <link
+    rel="myPage icon icon"
+    href="{% static 'images/mypage+.jpg' %}"
+  />
 </head>
-<body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
 
-        <a class="navbar-brand" href="#"><img src="{% static 'images/mypage+.jpg' %}" %} alt="image logo"></a>
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
+  <body>
+  <!-- Header -->
+  {% include 'fragments/header.html' %}
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Account
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Sign-Up</a>
-              <a class="dropdown-item" href="#">Login</a>
-              <a class="dropdown-item" href="#">Logout</a>
-            </div>
-          </li>
-        </ul>
-    </nav>
     <div class="dropdown">
       <button class="btn btn-secondary dropdown-toggle"
               type="button" id="dropdownMenu1" data-toggle="dropdown"
