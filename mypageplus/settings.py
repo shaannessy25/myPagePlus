@@ -25,20 +25,20 @@ SECRET_KEY = 'a=g*9vn72^-he=syy6_fdv7fr=h2q*g*kj0t)4y65!jq8k5rw*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'mypageplus.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', 'mypageplus.herokuapp.com', "127.0.0.1"]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'accounts',
+    'project',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'accounts',
-    'project',
 
 ]
 
@@ -126,12 +126,13 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
-STATIC_URL = '/static/'
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Where to redirect during authentication
 # LOGIN_REDIRECT_URL = reverse_lazy('home-page')
