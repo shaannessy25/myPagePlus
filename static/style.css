@@ -1,6 +1,20 @@
 body {
-  background-color: red;
-  padding: 0%;
+  background-image: url('./images/redbackground.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.navbar {
+  background: #222 !important;
+}
+
+.jumbotron {
+  background-color: transparent !important;
+}
+
+.padding-top {
+  padding-top: 5rem;
+  height: 100%;
 }
 
 .gsc-control-cse {
