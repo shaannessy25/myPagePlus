@@ -1,10 +1,5 @@
 body {
-<<<<<<< HEAD
   background-image: url('./images/giphy.gif');
-=======
-  padding-top: 4rem;
-  background-image: url('./images/redbackground.jpg');
->>>>>>> aecaf4f15bc74a6bd1b6267aaf151f082583c189
   background-position: center;
   background-size: cover;
   height: 100vh;
