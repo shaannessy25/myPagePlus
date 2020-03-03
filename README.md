@@ -1,5 +1,4 @@
-myPagePlus
-# maker
+# myPagePlus
 ![alt text](https://github.com/shaannessy25/myPagePlus/blob/master/static/images/mypage%2B.jpg)
 
 ### Basic Site Walk-through
@@ -10,19 +9,21 @@ myPagePlus
 
 ### Features
 
-
-
-
-### Prerequisites
-
-
-
+* Account creation
+* Google search
+* Spotify music player
 
 ### Proposal
 
 
 ### Installing
 
+Project code can be viewed locally by cloning or forking then open with any integrated development environment
+
+To run project in an IDE, run the following in terminal
+```
+$ python3 manage.py runserver
+```
 
 ## Built With
 
@@ -33,7 +34,7 @@ myPagePlus
 
 
 ## Django Addons
-This project uses the following third party addons
+This project uses the following third party addons:
 
 ## Deployment
 
