@@ -70,27 +70,10 @@
       <iframe src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3" width="500" height="700" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </div>
     <div class="carousel-item">
-      <div class="row" style="margin: 10%">
-        <div class="col-sm-3"></div>
-        <div class="col-sm-6">
-          <form>
-          <div class="input-group input-group-sm mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-sm">Weather</span>
-            </div>
-            <input type="text" placeholder="Location" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
-            <div class="input-group-append">
-              <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
-            </div>
-          </div>
-          <div>
-            <p id="message"></p>
-            <p id="message2"></p>
-          </div>
-        </form>
-        </div>
-        </div>
-    </div>
+      <a class="weatherwidget-io" href="https://forecast7.com/en/37d77n122d42/san-francisco/?unit=us" data-label_1="SAN FRANCISCO" data-label_2="WEATHER" data-font="Jura" data-icons="Climacons Animated" data-theme="dark" >SAN FRANCISCO WEATHER</a>
+      <script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+      </script>
   </div>
 </div>
 {% endblock content %}
