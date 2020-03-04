@@ -1,0 +1,93 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle"
+            type="button" id="dropdownMenu1" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+      Dropdown
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenu1" data-toggle="modal" data-target="#exampleModalCentered">
+      <a class="dropdown-item" href="#!">
+        <img src="{{ url_for('static', filename='img/gmail-logo.png') }}" alt="gmail logo" height="50px" width="50px">
+      </a>
+      <a class="dropdown-item" href="#!">
+        <img src="{{ url_for('static', filename='img/spotify-logo.jpg') }}" alt="spotify-logo" height="50px" width="50px">
+      </a>
+      <a class="dropdown-item" href="#!" data-toggle="modal weather" data-target="#exampleModalCentered-weather">
+        <img src="{{ url_for('static', filename='img/weather-logo.jpg') }}" alt="weather-logo" height="50px" width="80px">
+      </a>
+    </div>
+  </div>
+
+  <iframe src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+
+  <!-- Modal -->
+  <!-- Gmail -->
+  <div class="modal" id="exampleModalCentered" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenteredLabel">New Message</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="formGroupExampleInput">To</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Recipients">
+                </div>
+                <div class="form-group">
+                  <label for="formGroupExampleInput2">Subject</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter Subject">
+                </div>
+                <input class="form-control" type="text" placeholder="Type Message">
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Send</button>
+            </div>
+          </div>
+    </div>
+  </div>
+  
+  <!-- Weather -->
+  <div class="modal Weather" id="exampleModalCentered-weather" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenteredLabel">Check Weather</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="formGroupExampleInput">Enter City and State</label>
+                  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ex: San Francicso, Ca">
+                </div>
+                <input class="form-control" type="text" placeholder="Type Message">
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Send</button>
+            </div>
+          </div>
+    </div>
+  </div>
+  
+  <div class="row">
+      <div class="col-sm-3"></div>
+      <div class="col-sm-6">
+          <script async src="https://cse.google.com/cse.js?cx=000988731041558718465:h0wx8zukomc"></script>
+          <div class="gcse-search"></div>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}
