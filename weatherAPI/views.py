@@ -7,7 +7,7 @@ import geocoder
 key = "ad958ab12b22f3901be8a6cdb93beec3"
 okey = "pk.eyJ1Ijoib21hcnNzNjIiLCJhIjoiY2s3YXJsdGh4MG13ODNlcXJhY3l1NnMybiJ9.xmKZ0Yt2_b8evLDsrQcTqQ"
 
-def weatherView(location):
+def weatherView(request, location):
     coords = geocode(location)
 
     req = requests.get("https://api.darksky.net/forecast/"+ key + "/"+ coords)
@@ -23,7 +23,7 @@ def weatherView(location):
         "low": reqJson["daily"]["temperatureLow"]
     }
 
-    return weather
+    return render(request, "base.html", weather=weather)
 
 def geocode(location):
     url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/'+ location +'.json?access_token=' + key + '&autocomplete=true'
