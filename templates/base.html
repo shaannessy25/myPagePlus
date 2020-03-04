@@ -42,31 +42,38 @@
   <body>
     <!-- Header -->
     {% include 'fragments/header.html' %}
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
     <!-- Page Body -->
-      <div class="dropdown">
-        <button class="btn btn-secondary dropdown-toggle"
-                type="button" id="dropdownMenu1" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </button>
-        <div class="dropdown-menu" aria-labelledby="dropdownMenu1" data-toggle="modal" data-target="#exampleModalCentered">
-          <a class="dropdown-item" href="#!">
-            <img src="{% static 'images/gmail-logo.png' %}" alt="gmail logo" height="50px" width="50px">
-          </a>
-          <a class="dropdown-item" href="#!">
-            <img src="{% static 'images/spotify-logo.jpg' %}" alt="spotify-logo" height="50px" width="50px">
-          </a>
-          <a class="dropdown-item" href="#!" data-toggle="modal weather" data-target="#exampleModalCentered-weather">
-            <img src="{% static 'images/weather-logo.jpg' %}" alt="weather-logo" height="50px" width="80px">
-          </a>
-        </div>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle"
+              type="button" id="dropdownMenu1" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+        Dropdown
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenu1" data-toggle="modal" data-target="#exampleModalCentered">
+        <a class="dropdown-item" href="#!">
+          <img src="{% static 'images/gmail-logo.png' %}" alt="gmail logo" height="50px" width="50px">
+        </a>
+        <a class="dropdown-item" href="#!">
+          <img src="{% static 'images/spotify-logo.jpg' %}" alt="spotify-logo" height="50px" width="50px">
+        </a>
+        <a class="dropdown-item" href="#!" data-toggle="modal weather" data-target="#exampleModalCentered-weather">
+          <img src="{% static 'images/weather-logo.jpg' %}" alt="weather-logo" height="50px" width="80px">
+        </a>
+      </div>
     </div>
-    <iframe src="https://open.spotify.com/embed/album/1DFixLWuPkv3KT3TnV35m3" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    
-    
           <!-- Modal -->
           <!-- Gmail -->
+
+
+
+    <!-- Modal -->
+    <!-- Gmail -->
     <div class="modal" id="exampleModalCentered" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
@@ -96,6 +103,7 @@
             </div>
       </div>
     </div>
+
     <!-- Weather -->
     <div class="modal Weather" id="exampleModalCentered-weather" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteredLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
@@ -122,7 +130,7 @@
             </div>
       </div>
     </div>
-    
+
     <div class="row">
         <div class="col-sm-3"></div>
         <div class="col-sm-6">
@@ -130,7 +138,6 @@
             <div class="gcse-search"></div>
         </div>
       </div>
-      {% block content %} {% endblock %}
     </div>
 
     <!-- Footer -->
