@@ -11,4 +11,4 @@ class Home(generic.CreateView):
 
 class myPagePlus(generic.CreateView):
     def get(self, request):
-        return render(request, 'mypage.html')
+        return render(request, 'base.html')
