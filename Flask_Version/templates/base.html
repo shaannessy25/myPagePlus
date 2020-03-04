@@ -34,15 +34,10 @@
     {% include 'fragments/header.html' %}
 
     <!-- Page Body -->
-    <div id="content">
-        {% block content %} {% endblock %}
+    <div class="wrapper">
+        {% block content %}
+        {% endblock %}
     </div>
-
-    <!-- Footer -->
-    {% include 'fragments/footer.html' %}
-
-    <script src="{{ url_for('static', filename='js/message.js') }}"></script>
-
 
     <!-- Bootstrap JS -->
     <script
